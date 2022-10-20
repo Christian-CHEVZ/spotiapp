@@ -1,0 +1,8 @@
+<div (click)="seeArtist( item )" class="card card-align text-bg m-1 animated fadeIn puntero" *ngFor="let item of items">
+    <div></div>
+    <img [src]="item.images | noimage" class="card-img-top" alt="...">
+    <div class="card-body">
+        <span *ngFor="let artist of item.artists" class="badge text-bg-success">{{item.artists[0].name}}</span>
+        <h5 class="card-title">{{item.name}}</h5>
+    </div>
+</div>
